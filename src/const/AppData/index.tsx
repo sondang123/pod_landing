@@ -103,27 +103,7 @@ export const AppData = {
       names: 'kids_or_grandkids',
     },
   ],
-  dataWhyUsePersonalify: [
-    {
-      icon: AppResource.icons.ic_why_use_1,
-      title: 'Easy and Fast Customization',
-      subTitle:
-        'Our interface is intuitive and easy to use, allowing customers to effortlessly customize fields such as names, images, and personal messages.',
-    },
-    {
-      icon: AppResource.icons.ic_why_use_2,
-      title: 'Enhance Personal and Business Brand Value',
-      subTitle:
-        'Businesses can use personalized products to promote their brand and leave a strong impression on customers and partners.',
-    },
-    {
-      icon: AppResource.icons.ic_why_uses_3,
-      title: 'Easy Integration and Connectivity',
-      subTitle:
-        'Personalify easily integrates with platform like Shopify allowing efficient store and order management.',
-    },
-  ],
-
+  
   dataSlider: [
     {
       title: "That's very wonderful",
