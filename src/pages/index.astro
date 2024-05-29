@@ -1,0 +1,58 @@
+---
+import Header from '../components/Header/index.astro'
+import Banner from '../components/Banner/index.astro'
+import WhyUsePersonalify from '../components/WhyUsePersonalify/index.astro'
+import WhatWeCanDo from '../components/WhatWeCanDo/index.astro'
+import IncreaseProductivity from '../components/IncreaseProductivity/index.astro'
+import StartCustomizing from '../components/StartCustomizing/index.astro'
+import Footer from '../components/Footer/index.astro'
+import WhatTheSay from '../components/WhatTheSay/index.astro'
+
+import '~/styles/tailwind.css'
+import { AppResource } from '~/const/AppResource'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Personalify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-manrope antialiased">
+    <Header />
+    <div class="relative">
+      <Banner />
+      <div
+        class="absolute left-0 bottom-[47%] translate-y-[-47%] lg:bottom-[300px] z-0"
+      >
+        <img
+          src={AppResource.images.ic_banner_1.src}
+          alt="ic_1"
+          class="w-[210px] lg:w-[600px]"
+        />
+      </div>
+    </div>
+    <div class="absolute top-0 right-0 z-20">
+      <img
+        src={AppResource.images.ic_banner_2.src}
+        alt="ic_2"
+        class="w-[250px] lg:w-[600px]"
+      />
+    </div>
+
+    <WhyUsePersonalify />
+    <WhatWeCanDo />
+    <IncreaseProductivity />
+    <WhatTheSay />
+    <StartCustomizing />
+    <Footer />
+  </body>
+</html>

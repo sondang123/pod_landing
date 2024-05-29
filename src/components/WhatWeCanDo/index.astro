@@ -1,0 +1,68 @@
+---
+import { ButtonFullBg } from '~/AppButton/ButtonFullBg'
+import { AppResource } from '~/const/AppResource'
+import { Image } from 'astro:assets'
+---
+
+<div class="bg-bgColor-1 py-10 lg:py-29">
+  <div class="container mx-auto">
+    <div class="text-center">
+      <p class="typo-s12-w600 lg:typo-s20-w600 text-neutral-200">
+        WHAT WE CAN DO FOR YOU
+      </p>
+      <p class="typo-s24-w700 lg:typo-s40-w700 text-white pt-2 lg:pt-3">
+        Let us help you stand out in the market and create memorable experiences
+        for your customers
+      </p>
+    </div>
+    <div class="pt-7 lg:pt-15">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-3">
+        <div class="bg-white rounded-3 p-4 lg:p-12">
+          <Image
+            src={AppResource.images.img_home_3}
+            alt="img_creativity"
+            class="w-full"
+            loading={'lazy'}
+          />
+          <div class="pt-4 lg:pt-12">
+            <p class="typo-s14-w700 lg:typo-s24-w700 text-neutral-800">
+              The Unlimited Creativity of Personalify
+            </p>
+            <p
+              class="typo-s12-w400 lg:typo-s16-w400 text-neutral-500 pt-1 lg:pt-3"
+            >
+              The ability to customize products directly on your site provides a
+              unique and engaging shopping experience, leading to higher
+              conversion rates.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-3 p-4 lg:p-12">
+          <Image
+            src={AppResource.images.img_home_4}
+            alt="img_customization"
+            class="w-full"
+            loading={'lazy'}
+          />
+          <div class="pt-4 lg:pt-12">
+            <p class="typo-s14-w700 lg:typo-s24-w700 text-neutral-800">
+              Customization Capabilities of Personalify
+            </p>
+            <p
+              class="typo-s12-w400 lg:typo-s16-w400 text-neutral-500 pt-1 lg:pt-3"
+            >
+              Customers can personalize products by adding text (names,
+              messages, quotes) and uploading images or using pre-designed
+              templates.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex-center pt-7 lg:pt-15">
+        <ButtonFullBg
+          ><p class="typo-s16-w500 px-10">Explore now</p></ButtonFullBg
+        >
+      </div>
+    </div>
+  </div>
+</div>

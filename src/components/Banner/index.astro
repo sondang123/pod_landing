@@ -1,0 +1,31 @@
+---
+import { ButtonFullBg } from '~/AppButton/ButtonFullBg'
+import { TabsDemo } from '~/components/TabsDemo'
+---
+
+<div>
+  <div class="bg-bgColor-1 pb-[500px] lg:pb-[460px]">
+    <div class="container mx-auto">
+      <p
+        class="typo-s32-w700 lg:typo-s56-w800 text-gray-50 text-center pt-12 lg:pt-29 lg:w-[90%]"
+      >
+        Help customers create their unique personalized products
+      </p>
+      <p
+        class="typo-s14-w400 lg:typo-s20-w500 text-center text-neutral-400 pt-4 lg:pt-8"
+      >
+        Implement real-time personalization to all of your Print-On-Demand
+        product.<br />Empower your customers the freedom to design products
+        based on their preferences.
+      </p>
+      <div class="flex-center pt-8 lg:pt-12">
+        <ButtonFullBg
+          ><p class="typo-s16-w500 px-10">Get Started</p></ButtonFullBg
+        >
+      </div>
+    </div>
+  </div>
+  <div class="mt-[-455px] lg:mt-[-380px]">
+    <TabsDemo client:load />
+  </div>
+</div>

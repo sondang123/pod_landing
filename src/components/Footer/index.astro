@@ -1,0 +1,88 @@
+---
+import { ButtonFullBg } from '~/AppButton/ButtonFullBg'
+import { Input } from '../ui/input'
+import { Image } from 'astro:assets'
+import { AppResource } from '~/const/AppResource'
+import { DesktopContainer, MobileContainer } from '~/const/StyleGlobal'
+---
+
+<div class="border-t border-neutral-100">
+  <div class="container mx-auto py-10 lg:py-29">
+    <DesktopContainer>
+      <div class="grid grid-cols-12 items-end">
+        <div class="col-span-8">
+          <p class="typo-s24-w700 text-primary-black">Personalify</p>
+          <div class="flex gap-7.5 mt-12">
+            <div class="flex">
+              <Image
+                src={AppResource.icons.ic_copyright}
+                alt="ic_copyright"
+                class="shink-1 object-contain mr-2.5"
+                width={15}
+                loading={'lazy'}
+              />
+              <p class="typo-s18-w600 text-neutral-800">Personalify 2024</p>
+            </div>
+            <p class="typo-s18-w600 text-neutral-800">Privacy policy</p>
+            <p class="typo-s18-w600 text-neutral-800">Cookies policy</p>
+            <p class="typo-s18-w600 text-neutral-800">Terms of use</p>
+          </div>
+        </div>
+        <div class="col-span-4">
+          <p class="typo-s14-w500 text-neutral-700">
+            Updates right to your Inbox
+          </p>
+          <div class="relative mt-3">
+            <Input
+              placeholder="Email"
+              className="rounded-full h-12 pl-6 pr-32"
+            />
+            <div class="absolute right-1 top-[4px]">
+              <ButtonFullBg
+                className="bg-primary-black text-neutral-50 px-4 py-2.5"
+                ><p class="px-7 leading-5">Send</p>
+              </ButtonFullBg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </DesktopContainer>
+    <MobileContainer>
+      <div>
+        <p class="typo-s14-w500 text-neutral-700">
+          Updates right to your Inbox
+        </p>
+        <div class="relative mt-3">
+          <Input
+            placeholder="Email"
+            className="rounded-full h-12 pl-6 pr-32 typo-s14-w400"
+          />
+          <div class="absolute right-1 top-[4px]">
+            <ButtonFullBg
+              className="bg-primary-black text-neutral-50 px-4 py-2.5"
+              ><p class="px-7 leading-5">Send</p>
+            </ButtonFullBg>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="typo-s20-w700 text-primary-black pt-8">Personalify</p>
+        <div class="flex mt-5 flex-wrap justify-between">
+          <p class="typo-s14-w600 text-neutral-800">Privacy policy</p>
+          <p class="typo-s14-w600 text-neutral-800">Cookies policy</p>
+          <p class="typo-s14-w600 text-neutral-800">Terms of use</p>
+        </div>
+        <div class="flex justify-center pt-4">
+          <Image
+            src={AppResource.icons.ic_copyright}
+            alt="ic_copyright"
+            class="shink-1 object-contain mr-2.5"
+            width={15}
+            loading={'lazy'}
+          />
+          <p class="typo-s14-w600 text-neutral-800">Personalify 2024</p>
+        </div>
+      </div>
+    </MobileContainer>
+  </div>
+</div>

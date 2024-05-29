@@ -1,0 +1,105 @@
+---
+import { Image } from 'astro:assets'
+import { AppData } from '~/const/AppData'
+import { AppResource } from '~/const/AppResource'
+---
+
+<div class="container mx-auto pt-20 pb-10 lg:py-29">
+  <div class="text-center lg:w-[70%] mx-auto">
+    <p class="typo-s12-w600 lg:typo-s20-w600 text-neutral-600">
+      WHY USE PERSONALIFY
+    </p>
+    <p class="typo-s24-w700 lg:typo-s40-w700 text-neutral-900 pt-2 lg:pt-3">
+      Easy, Simple, Affordable
+    </p>
+    <p class="typo-s14-w400 lg:typo-s20-w500 text-neutral-500 pt-3 lg:pt-6">
+      Our platform helps your business offer personalized products. Here are
+      some reasons why you should use Personalify to enhance your product
+      offerings and boost customer satisfaction.
+    </p>
+  </div>
+  <div class="mt-7 lg:mt-15">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-7">
+      <div>
+        <div class="flex">
+          <div
+            class="bg-primary-black rounded-1.5 lg:rounded-3 w-[32px] lg:w-[50px] h-[32px] lg:h-[50px] shrink-0 flex-center mr-3 lg:mr-8"
+          >
+            <Image
+              src={AppResource.icons.ic_why_use_1}
+              alt="icon"
+              class="w-[16px] lg:w-[24px] h-[16px] lg:h-[24px] object-contain"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <p class="typo-s16-w600 lg:typo-s24-w600 text-neutral-800">
+              Easy and Fast Customization
+            </p>
+            <p
+              class="typo-s12-w400 lg:typo-s16-w400 text-neutral-500 pt-1 lg:pt-3"
+            >
+              Our interface is intuitive and easy to use, allowing customers to
+              effortlessly customize fields such as names, images, and personal
+              messages.
+            </p>
+          </div>
+        </div>
+        <div class="flex mt-4 lg:mt-12">
+          <div
+            class="bg-primary-black rounded-1.5 lg:rounded-3 w-[32px] lg:w-[50px] h-[32px] lg:h-[50px] shrink-0 flex-center mr-3 lg:mr-8"
+          >
+            <Image
+              src={AppResource.icons.ic_why_use_2}
+              alt="icon"
+              class="w-[16px] lg:w-[24px] h-[16px] lg:h-[24px] object-contain"
+              loading={'lazy'}
+            />
+          </div>
+          <div>
+            <p class="typo-s16-w600 lg:typo-s24-w600 text-neutral-800">
+              Enhance Personal and Business Brand Value
+            </p>
+            <p
+              class="typo-s12-w400 lg:typo-s16-w400 text-neutral-500 pt-1 lg:pt-3"
+            >
+              Businesses can use personalized products to promote their brand
+              and leave a strong impression on customers and partners.
+            </p>
+          </div>
+        </div>
+        <div class="flex mt-4 lg:mt-12">
+          <div
+            class="bg-primary-black rounded-1.5 lg:rounded-3 w-[32px] lg:w-[50px] h-[32px] lg:h-[50px] shrink-0 flex-center mr-3 lg:mr-8"
+          >
+            <Image
+              src={AppResource.icons.ic_why_uses_3}
+              alt="icon"
+              class="w-[16px] lg:w-[24px] h-[16px] lg:h-[24px] object-contain"
+              loading={'lazy'}
+            />
+          </div>
+          <div>
+            <p class="typo-s16-w600 lg:typo-s24-w600 text-neutral-800">
+              Easy Integration and Connectivity
+            </p>
+            <p
+              class="typo-s12-w400 lg:typo-s16-w400 text-neutral-500 pt-1 lg:pt-3"
+            >
+              Personalify easily integrates with platform like Shopify allowing
+              efficient store and order management.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <Image
+          src={AppResource.images.img_home_2}
+          alt="icon"
+          class="w-100 lg:w-[70%] ml-auto"
+          loading={'lazy'}
+        />
+      </div>
+    </div>
+  </div>
+</div>
