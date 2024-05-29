@@ -1,4 +1,3 @@
-import { Image } from 'lucide-react'
 import React from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '~/components/ui/tabs'
 import { AppResource } from '~/const/AppResource'

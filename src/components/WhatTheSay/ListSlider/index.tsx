@@ -7,7 +7,6 @@ import {
   CarouselPrevious,
 } from '~/components/ui/carousel'
 import { AppData } from '~/const/AppData'
-import { AppResource } from '~/const/AppResource'
 import { DesktopContainer, MobileContainer } from '~/const/StyleGlobal'
 interface ItemSLiderProps {
   title?: string

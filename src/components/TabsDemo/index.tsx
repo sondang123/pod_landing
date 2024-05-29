@@ -4,7 +4,7 @@ import { AppData } from '~/const/AppData'
 import { AppResource } from '~/const/AppResource'
 import { Input } from '../ui/input'
 import { Label } from '../ui/label'
-import { Image } from 'astro:assets'
+
 export const TabsDemo: React.FC = () => {
   return (
     <div className="container mx-auto">
