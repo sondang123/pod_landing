@@ -10,6 +10,7 @@ import WhatTheSay from '../components/WhatTheSay/index.astro'
 
 import '~/styles/tailwind.css'
 import { AppResource } from '~/const/AppResource'
+import { Image } from 'astro:assets'
 ---
 
 <html lang="en">
@@ -34,19 +35,19 @@ import { AppResource } from '~/const/AppResource'
       <div
         class="absolute left-0 bottom-[47%] translate-y-[-47%] lg:bottom-[300px] z-0"
       >
-        <img
-          src={AppResource.images.ic_banner_1.src}
+    
+        <Image  
+        src={AppResource.images.ic_banner_1}
           alt="ic_1"
-          class="w-[210px] lg:w-[600px]"
-        />
+          class="w-[210px] lg:w-[600px]"/>
       </div>
     </div>
     <div class="absolute top-0 right-0 z-20">
-      <img
-        src={AppResource.images.ic_banner_2.src}
-        alt="ic_2"
-        class="w-[250px] lg:w-[600px]"
-      />
+
+       <Image  
+        src={AppResource.images.ic_banner_2}
+          alt="ic_2"
+          class="w-[210px] lg:w-[600px]"/>
     </div>
 
     <WhyUsePersonalify />
