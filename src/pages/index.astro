@@ -39,7 +39,10 @@ import { Image } from 'astro:assets'
         <Image  
         src={AppResource.images.ic_banner_1}
           alt="ic_1"
-          class="w-[210px] lg:w-[600px]"/>
+          class="w-[210px] lg:w-[600px]"
+          loading='lazy'
+          />
+          
       </div>
     </div>
     <div class="absolute top-0 right-0 z-20">
@@ -47,7 +50,7 @@ import { Image } from 'astro:assets'
        <Image  
         src={AppResource.images.ic_banner_2}
           alt="ic_2"
-          class="w-[210px] lg:w-[600px]"/>
+          class="w-[210px] lg:w-[600px]" loading='lazy'/>
     </div>
 
     <WhyUsePersonalify />
