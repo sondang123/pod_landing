@@ -1,10 +1,9 @@
 {
   "singleQuote": true,
-  "trailingComma": "es5",
+  "trailingComma": "all",
   "semi": false,
   "plugins": [
-    "prettier-plugin-organize-imports",
-    "prettier-plugin-tailwindcss"
-  ],
-  "tailwindFunctions": ["clsx", "cn"]
+    "@softonus/prettier-plugin-whitespace-remover",
+    "@softonus/prettier-plugin-duplicate-remover"
+  ]
 }

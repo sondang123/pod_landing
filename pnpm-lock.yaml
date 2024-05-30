@@ -7,16 +7,13 @@ settings:
 dependencies:
   '@astrojs/check':
     specifier: ^0.7.0
-    version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.2.5)(typescript@5.4.5)
+    version: 0.7.0(prettier-plugin-astro@0.14.0)(typescript@5.4.5)
   '@astrojs/react':
     specifier: ^3.4.0
     version: 3.4.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)(vite@5.2.11)
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.9.1)(tailwindcss@3.4.3)
-  '@astrojs/ts-plugin':
-    specifier: ^1.8.0
-    version: 1.8.0
   '@hookform/resolvers':
     specifier: ^3.3.4
     version: 3.3.4(react-hook-form@7.51.3)
@@ -50,6 +47,9 @@ dependencies:
   '@remix-run/react':
     specifier: ^2.8.1
     version: 2.8.1(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
+  '@softonus/prettier-plugin-duplicate-remover':
+    specifier: ^1.0.1
+    version: 1.0.1
   '@tailwindcss/typography':
     specifier: ^0.5.12
     version: 0.5.12(tailwindcss@3.4.3)
@@ -118,9 +118,9 @@ dependencies:
     version: 3.23.8
 
 devDependencies:
-  prettier:
-    specifier: ^3.2.5
-    version: 3.2.5
+  '@softonus/prettier-plugin-whitespace-remover':
+    specifier: ^1.0.1
+    version: 1.0.1
   prettier-plugin-astro:
     specifier: ^0.14.0
     version: 0.14.0
@@ -140,13 +140,13 @@ packages:
       '@jridgewell/trace-mapping': 0.3.25
     dev: false
 
-  /@astrojs/check@0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.2.5)(typescript@5.4.5):
+  /@astrojs/check@0.7.0(prettier-plugin-astro@0.14.0)(typescript@5.4.5):
     resolution: {integrity: sha512-UTqwOeKNu9IYZmJXEeWnQuTdSd/pX58Hl4TUARsMlT97SVDL//kLBE4T/ctxRz6J573N87oE5ddtW/uOOnQTug==}
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
     dependencies:
-      '@astrojs/language-server': 2.10.0(prettier-plugin-astro@0.14.0)(prettier@3.2.5)(typescript@5.4.5)
+      '@astrojs/language-server': 2.10.0(prettier-plugin-astro@0.14.0)(typescript@5.4.5)
       chokidar: 3.6.0
       fast-glob: 3.3.2
       kleur: 4.1.5
@@ -168,7 +168,7 @@ packages:
     resolution: {integrity: sha512-6B13lz5n6BrbTqCTwhXjJXuR1sqiX/H6rTxzlXx+lN1NnV4jgnq/KJldCQaUWJzPL5SiWahQyinxAbxQtwgPHA==}
     dev: false
 
-  /@astrojs/language-server@2.10.0(prettier-plugin-astro@0.14.0)(prettier@3.2.5)(typescript@5.4.5):
+  /@astrojs/language-server@2.10.0(prettier-plugin-astro@0.14.0)(typescript@5.4.5):
     resolution: {integrity: sha512-crHXpqYfA5qWioiuZnZFpTsNItgBlF1f0S9MzDYS7/pfCALkHNJ7K3w9U/j0uMKymsT4hC7BfMaX0DYlfdSzHg==}
     hasBin: true
     peerDependencies:
@@ -188,12 +188,11 @@ packages:
       '@volar/language-service': 2.2.5
       '@volar/typescript': 2.2.5
       fast-glob: 3.3.2
-      prettier: 3.2.5
       prettier-plugin-astro: 0.14.0
       volar-service-css: 0.0.45(@volar/language-service@2.2.5)
       volar-service-emmet: 0.0.45(@volar/language-service@2.2.5)
       volar-service-html: 0.0.45(@volar/language-service@2.2.5)
-      volar-service-prettier: 0.0.45(@volar/language-service@2.2.5)(prettier@3.2.5)
+      volar-service-prettier: 0.0.45(@volar/language-service@2.2.5)
       volar-service-typescript: 0.0.45(@volar/language-service@2.2.5)
       volar-service-typescript-twoslash-queries: 0.0.45(@volar/language-service@2.2.5)
       vscode-html-languageservice: 5.2.0
@@ -282,17 +281,6 @@ packages:
       which-pm-runs: 1.1.0
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /@astrojs/ts-plugin@1.8.0:
-    resolution: {integrity: sha512-SXbMemCjA66eHXLon2uDGkLAdbIRS+EzSBKPqBuOcQ4XzU/o+oTTp12cXBIQTOtP/zsnuJPYA6gc36Ylic196g==}
-    dependencies:
-      '@astrojs/compiler': 2.8.0
-      '@jridgewell/sourcemap-codec': 1.4.15
-      '@volar/language-core': 2.2.5
-      '@volar/typescript': 2.2.5
-      semver: 7.6.2
-      vscode-languageserver-textdocument: 1.0.11
     dev: false
 
   /@babel/code-frame@7.24.6:
@@ -2236,6 +2224,14 @@ packages:
   /@shikijs/core@1.6.0:
     resolution: {integrity: sha512-NIEAi5U5R7BLkbW1pG/ZKu3eb1lzc3/+jD0lFsuxMT7zjaf9bbNwdNyMr7zh/Zl8EXQtQ+MYBAt5G+JLu+5DlA==}
     dev: false
+
+  /@softonus/prettier-plugin-duplicate-remover@1.0.1:
+    resolution: {integrity: sha512-hoF5Y8puB73t8j4iW8lPKQA2MAPftsCTfAQm5mbYoabhjlgOxMaYmAz5W0DWkaS38oTy2SdApyxmBZZpcHz2+w==}
+    dev: false
+
+  /@softonus/prettier-plugin-whitespace-remover@1.0.1:
+    resolution: {integrity: sha512-TBr/c+Zg6N4KoDyK00r/5N7jFSjQPnoee1epcgiRdynhpxJupyoDNM0pdlNUUkOuGrM1oZ2Q8pEptjBJZTVU/w==}
+    dev: true
 
   /@tailwindcss/typography@0.5.12(tailwindcss@3.4.3):
     resolution: {integrity: sha512-CNwpBpconcP7ppxmuq3qvaCxiRWnbhANpY/ruH4L5qs2GCiVDJXde/pjj2HWPV1+Q4G9+V/etrwUYopdcjAlyg==}
@@ -5523,7 +5519,7 @@ packages:
       vscode-uri: 3.0.8
     dev: false
 
-  /volar-service-prettier@0.0.45(@volar/language-service@2.2.5)(prettier@3.2.5):
+  /volar-service-prettier@0.0.45(@volar/language-service@2.2.5):
     resolution: {integrity: sha512-+mBS2EsDgp/kunKEBnHvhBwIQm5v2ahw4NKpKdg4sTpXy3UxqHt+Fq/wRYQ7Z8LlNVNRVfp75ThjM+w2zaZBAw==}
     peerDependencies:
       '@volar/language-service': ~2.2.3
@@ -5535,7 +5531,6 @@ packages:
         optional: true
     dependencies:
       '@volar/language-service': 2.2.5
-      prettier: 3.2.5
       vscode-uri: 3.0.8
     dev: false
 
